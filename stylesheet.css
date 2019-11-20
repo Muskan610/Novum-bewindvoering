@@ -1,6 +1,6 @@
 html {
     background-image: url("img/novum-bg-img.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     width: 100%;
     background-size: cover;
     font-family: 'PT Sans', sans-serif;
@@ -22,7 +22,7 @@ html {
 }
 
 .HeaderRow {
-    margin-bottom: 20px;
+    margin-bottom: 1vw;
 }
 
 header {
@@ -35,15 +35,13 @@ header {
 h1 {
     text-align: center;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1vw;
 }
 
 
 /* Add a black background color to the top navigation */
 
 .topnav {
-    margin-top: 30px;
-    margin-bottom: 5px;
     /* background-color: #333; */
     overflow: hidden;
 }
@@ -56,7 +54,7 @@ h1 {
     float: right;
     color: #fff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1vw 1vw;
     text-decoration: none;
     font-size: 1.5vw;
     /* font-size: 17px; */
@@ -80,16 +78,94 @@ h1 {
 
 footer {
     font-size: 1.2vw;
-    border: 1px solid #fff;
+    border: 0.1vw solid #fff;
     text-align: center;
     margin: auto;
     width: 100%;
-    height: 30 px;
+    height: 1.5vw;
+    padding: 0.2vw;
 }
 
-@media only screen and (max-width: 600px) {
+
+/* form styling */
+
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 1.15vw;
+    /* Some padding */
+    border: 0.1vw solid #ccc;
+    /* Gray border */
+    border-radius: 0.5vw;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 0.6vw;
+    /* Add a top margin */
+    margin-bottom: 0.6vw;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: #008000;
+    color: white;
+    padding: 1vw 1vw;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
+    background-color: #89C507;
+}
+
+
+/* Add a background color and some padding around the form */
+
+.containerForm {
+    border-radius: 0.5vw;
+    background-color: #f7c7b9;
+    padding: 1.8vw;
+    margin-bottom: 8vw;
+    color: #333;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+
+/* end of form styling */
+
+@media only screen and (max-width:360px) {
     body {
         background-color: lightblue;
+    }
+    .column {
+        float: left;
+        width: 100%;
+    }
+    .HeaderRow {
+        margin-bottom: 20px;
+    }
+    .topnav a {
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        padding: 1vw 1vw;
+        text-decoration: none;
+        font-size: 1.5vw;
+        /* font-size: 17px; */
     }
 }
 
