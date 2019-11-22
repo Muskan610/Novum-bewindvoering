@@ -1,6 +1,8 @@
 html {
     background-image: url("img/novum-bg-img.jpg");
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-repeat: repeat-y; */
     width: 100%;
     background-size: cover;
     font-family: 'PT Sans', sans-serif;
@@ -26,10 +28,15 @@ html {
 }
 
 header {
-    font-size: 5vw;
+    font-size: 4vw;
     /* font-size: 65px; */
-    text-align: center;
+    /* text-align: center; */
     margin: auto;
+}
+
+header img {
+    width: 36.78vw;
+    height: 12vw;
 }
 
 h1 {
@@ -37,9 +44,6 @@ h1 {
     margin: auto;
     margin-bottom: 1vw;
 }
-
-
-/* Add a black background color to the top navigation */
 
 .topnav {
     /* background-color: #333; */
@@ -76,9 +80,80 @@ h1 {
     color: #000;
 }
 
+.moneyBGimg {
+    width: 40vw;
+    height: 22.5‬vw;
+}
+
+.columnContent {
+    float: left;
+    width: 50%;
+}
+
+.rowContent:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.homeContent {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.servicesList {
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+.servicesList a {
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+    margin: auto;
+    margin: 0px 20px 0px 20px;
+}
+
+.servicesList a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.onviewLink {
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.onviewLink:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* arranging contact details into 3 columns */
+
+.columnContact {
+    font-size: 1.5vw;
+    font-weight: bold;
+    float: left;
+    width: 33.33%;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+.rowContact:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 footer {
     font-size: 1.2vw;
-    border: 0.1vw solid #fff;
+    border: 0.05vw solid #fff;
     text-align: center;
     margin: auto;
     width: 100%;
