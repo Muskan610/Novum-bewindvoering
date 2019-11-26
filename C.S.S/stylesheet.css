@@ -1,12 +1,12 @@
 html {
-    background-image: url("img/novum-bg-img.jpg");
+    /* background-image: url("img/novum-bg-img.jpg"); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     /* background-repeat: repeat-y; */
     width: 100%;
     background-size: cover;
     font-family: 'PT Sans', sans-serif;
-    color: #FFF;
+    color: #000000;
 }
 
 
@@ -23,26 +23,26 @@ html {
     clear: both;
 }
 
-.HeaderRow {
-    margin-bottom: 1vw;
-}
-
 header {
     font-size: 4vw;
-    /* font-size: 65px; */
-    /* text-align: center; */
     margin: auto;
 }
 
 header img {
-    width: 36.78vw;
-    height: 12vw;
+    width: 25.05vw;
+    height: 6vw;
+    padding-left: 0.5vw;
+    padding-top: 0.5vw;
 }
 
 h1 {
     text-align: center;
     margin: auto;
     margin-bottom: 1vw;
+}
+
+.indexH1 {
+    text-align: left;
 }
 
 .topnav {
@@ -56,7 +56,7 @@ h1 {
 .topnav a {
     font-weight: bold;
     float: right;
-    color: #fff;
+    color: #000;
     text-align: center;
     padding: 1vw 1vw;
     text-decoration: none;
@@ -68,7 +68,7 @@ h1 {
 /* Change the color of links on hover */
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #d5dceb;
     color: black;
 }
 
@@ -76,11 +76,13 @@ h1 {
 /* Add a color to the active/current link */
 
 .topnav a.active {
-    background-color: #fff;
-    color: #000;
+    background-color: #003399;
+    /* background-color: #818181; */
+    color: #fff;
 }
 
 .moneyBGimg {
+    padding-top: 3vw;
     width: 40vw;
     height: 22.5‬vw;
 }
@@ -96,6 +98,11 @@ h1 {
     clear: both;
 }
 
+.rowContent {
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
 .homeContent {
     text-align: justify;
     text-justify: inter-word;
@@ -108,7 +115,7 @@ h1 {
 
 .servicesList a {
     font-weight: bold;
-    color: #fff;
+    color: #000000;
     text-align: center;
     text-decoration: none;
     font-size: 1.5vw;
@@ -117,19 +124,26 @@ h1 {
 }
 
 .servicesList a:hover {
-    background-color: #ddd;
+    background-color: #d5dceb;
     color: black;
+}
+
+.servicesContent {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 2vw;
+    margin-left: 2vw;
 }
 
 .onviewLink {
     overflow: hidden;
-    color: #fff;
+    color: #000000;
     text-align: center;
     text-decoration: none;
 }
 
 .onviewLink:hover {
-    background-color: #ddd;
+    background-color: #d5dceb;
     color: black;
 }
 
@@ -141,7 +155,7 @@ h1 {
     font-weight: bold;
     float: left;
     width: 33.33%;
-    margin-bottom: 1vw;
+    margin-bottom: 3vw;
     margin-top: 1vw;
 }
 
@@ -151,14 +165,33 @@ h1 {
     clear: both;
 }
 
+.footerIconPhone {
+    width: 2vw;
+    height: 2vw;
+}
+
+.footerIconOnview {
+    width: 2vw;
+    height: 2vw;
+}
+
+.footerIconEmail {
+    width: 2.75vw;
+    height: 2vw;
+}
+
 footer {
+    background-color: #d5dceb;
     font-size: 1.2vw;
-    border: 0.05vw solid #fff;
+    border: 0.05vw solid #000000;
     text-align: center;
     margin: auto;
     width: 100%;
     height: 1.5vw;
     padding: 0.2vw;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 
@@ -190,7 +223,7 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 
-input[type=submit] {
+.containerForm button {
     background-color: #008000;
     color: white;
     padding: 1vw 1vw;
@@ -211,7 +244,7 @@ input[type=submit]:hover {
 
 .containerForm {
     border-radius: 0.5vw;
-    background-color: #f7c7b9;
+    background-color: #d5dceb;
     padding: 1.8vw;
     margin-bottom: 8vw;
     color: #333;
@@ -235,7 +268,7 @@ input[type=submit]:hover {
     }
     .topnav a {
         font-weight: bold;
-        color: #fff;
+        color: #ef9684;
         text-align: center;
         padding: 1vw 1vw;
         text-decoration: none;

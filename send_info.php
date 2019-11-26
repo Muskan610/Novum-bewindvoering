@@ -1,34 +1,27 @@
 <?php
 declare(strict_types=1);
-include "AutoLoaderIncl.php";
 
-session_start();
-
-if(isset($_POST["reset-request-submit"]))
+if(isset($_POST["submit"]))
 	{
-		$selector = bin2hex(openssl_random_pseudo_bytes(8));	//to authenticate the correct user
-		$token = openssl_random_pseudo_bytes(32);//to look in DB for token for respective user, //2 tokens to prevent timing attacks
-		$userEmail = $_POST["email"];
+		$voornaam = $_POST["Voornaam"];
+		$achternaam = $_POST["Achternaam"];
+		$email = $_POST["email"];
+		$subjectKlant = $_POST["Onderwerp"];
 
-    $to = $userEmail;
-	$subject = "Reset your password for The Coding Essentials";
-	$message = "We recieved your password reset request. The link to reset your password is given below.\r\n";
-	$message .= "Note that this link is valid for 30 minutes only.\r\n";
-	$message .="If you did not make this request, you can ignore this email.\r\n";
-	$message .="Here is your password link: " .$url; 
+    $to = "info@novumbewindvoering.nl";
+	$subject = "Contactverzoek van ".$voornaam." ".$achternaam;
+	$message = $voornaam." ".$achternaam." wil contact met u opnemen.\r\n";
+	$message .= " Hieronder zijn de details.\r\n";
 
-	$headers = "From: The Coding Essentials <s636130@server.infhaarlem.nl>\r\n";
+	$headers = "From: Novum Bewindvoering en advies\r\n";
 	
-	mail($to, $subject, $message, $headers); 			
-
-	$_SESSION["url"]=$url; //temporary, delete this later
-
-	header("Location: index.pwdreset.php?reset=success");
-
-}
+	//mail($to, $subject, $message, $headers); 	
+	
+	header("Location: contact.php?infoSent=success");
+	}
 
 else{
-	header("Location: index.php");
+	header("Location: contact.php");
 }
 
 	?>
