@@ -256,9 +256,6 @@ input[type=submit]:hover {
 /* end of form styling */
 
 @media only screen and (max-width:360px) {
-    body {
-        background-color: lightblue;
-    }
     .column {
         float: left;
         width: 100%;
@@ -268,7 +265,6 @@ input[type=submit]:hover {
     }
     .topnav a {
         font-weight: bold;
-        color: #ef9684;
         text-align: center;
         padding: 1vw 1vw;
         text-decoration: none;
