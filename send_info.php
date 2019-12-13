@@ -12,10 +12,13 @@ if(isset($_POST["submit"]))
 	$subject = "Contactverzoek van ".$voornaam." ".$achternaam;
 	$message = $voornaam." ".$achternaam." wil contact met u opnemen.\r\n";
 	$message .= " Hieronder zijn de details.\r\n";
+	$message .= " Naam: ".$voornaam." ".$achternaam."\r\n";
+	$message .= " Email: ".$email."\r\n";
+	$message .= " Onderwerp: ".$subjectKlant."\r\n";
 
 	$headers = "From: Novum Bewindvoering en advies\r\n";
 	
-	//mail($to, $subject, $message, $headers); 	
+	mail($to, $subject, $message, $headers); 	
 	
 	header("Location: contact.php?infoSent=success");
 	}

@@ -255,22 +255,82 @@ input[type=submit]:hover {
 
 /* end of form styling */
 
-@media only screen and (max-width:360px) {
+
+/* Media queries for a responsive website */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    html {
+        font-size: 2vw;
+        text-align: left;
+    }
     .column {
-        float: left;
+        /* float: left; */
         width: 100%;
     }
-    .HeaderRow {
-        margin-bottom: 20px;
+    .row:after {
+        content: "";
+        display: inline;
+        clear: both;
+    }
+    header {
+        font-size: 4vw;
+        margin: auto;
+    }
+    header img {
+        width: 25.05vw;
+        height: 6vw;
+        padding-left: 0.5vw;
+        padding-top: 0.5vw;
+    }
+    .topnav {
+        margin-top: 0.5vw;
+        margin-bottom: 1vw;
     }
     .topnav a {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        font-size: 3vw;
+    }
+    /*index content*/
+    .indexH1 {
+        text-align: center;
+    }
+    .columnContent {
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+    .columnContent img {
+        display: none;
+    }
+    .rowContent:after {
+        content: "";
+        display: inline;
+        clear: both;
+    }
+    .servicesContent {
+        text-align: left;
+    }
+    .indexH1 {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 1vw;
+    }
+    /*services */
+    .servicesList a {
+        font-size: 2vw;
+    }
+    /* .topnav a {
         font-weight: bold;
         text-align: center;
         padding: 1vw 1vw;
         text-decoration: none;
         font-size: 1.5vw;
-        /* font-size: 17px; */
-    }
+        /* font-size: 17px; 
+    }*/
 }
 
 
